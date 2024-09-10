@@ -1,8 +1,31 @@
 header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
+	height: 114px;
+	padding: 25px 0 39px;
 	a {
 		color: #fff;
 	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	height: 48.35px;
+	width: 172px;
+	margin-right: 97px;
+	cursor: pointer;
+}
+
+ul.nav-bar {
+	display: flex;
+	margin-right: 97px;
+	gap: 45px;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
 }
