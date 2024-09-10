@@ -7,29 +7,29 @@
 }
 
 @font-face {
-    font-family: 'proxima-nova', sans-serif;
-    src: url(/assets/fonts/ProximaNova-Light.ttf) format(trutype);
+    font-family: 'proxima-nova';
+    src: url('../assets/fonts/ProximaNova-Light.ttf') format('truetype');
     font-weight: 300;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'proxima-nova', sans-serif;
-    src: url(/assets/fonts/ProximaNova-Regular.ttf) format(trutype);
+    font-family: 'proxima-nova';
+    src: url('../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'proxima-nova', sans-serif;
-    src: url(/assets/fonts/ProximaNova-Semibold.ttf) format(trutype);
+    font-family: 'proxima-nova';
+    src: url('../assets/fonts/ProximaNova-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'proxima-nova', sans-serif;
-    src: url(/assets/fonts/ProximaNova-Bold.ttf) format(trutype);
+    font-family: 'proxima-nova';
+    src: url('../assets/fonts/ProximaNova-Bold.ttf') format('truetype');
     font-weight: 700;
     font-display: swap;
 }
