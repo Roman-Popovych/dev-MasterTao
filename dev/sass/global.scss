@@ -8,10 +8,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: $bg-color;
+    background: $bg-body;
     color: $color;
-    font-family: 'proxima-nova';
+    font-family: $font-primary;
     font-weight: 400;
+    font-size: $fs;
 }
 
 img {
@@ -19,15 +20,96 @@ img {
     height: auto;
 }
 
-button {
-    font-family: 'proxima-nova';
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+li {
+    &::marker {
+        color: $primary-color;
+    }
+}
+
+ul {
+    li {
+        position: relative;
+        &:not([class]) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background-color: $primary-color;
+                border-radius: 3px;
+                left: -18px;
+                top: 7px;
+                transform: rotate(45deg);
+            }
+        }   
+    }
+}
+
+.dropdown-menu {
+    > li {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.btn {
+    font-family: $font-primary;
     font-weight: 600;
-    padding: 14px 27px;
+    padding: 13px 26px;
+    border: 1px solid $primary-color;
     border-radius: 90px;
-    background: $accent;
     color: $color;
     cursor: pointer;
-    border: 0px;
     font-size: 15px;
-    line-height: 21.9px;
+    line-height: 146%;
+    
+    &:hover {
+        text-decoration: none;
+        border: 1px solid $primary-color;
+    }
+    &.btn-primary {
+        background: $primary-color;
+        
+        &:hover {
+            background: transparent;
+        }
+    }
+    &.btn-secondary {
+        background-color: transparent;
+        &:hover {
+            background: $primary-color;
+        }
+    }
+    &.btn-primary,
+    &.btn-secondary {
+        &:active {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+    &.btn-mini {
+        padding: 12px 16px;
+    }
+    &.btn-lg {
+        padding: 19px 24px;
+        font-size: 16px;
+    }
+    & img {
+        margin-left: 46px;
+        height: 27px;
+        width: 27px;
+    }
 }
+
+

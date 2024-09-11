@@ -3,6 +3,7 @@ header{
 	padding: 25px 0 39px;
 	a {
 		color: #fff;
+		text-decoration: none;
 	}
 }
 
@@ -19,13 +20,12 @@ header{
 	cursor: pointer;
 }
 
-ul.nav-bar {
-	display: flex;
-	margin-right: 97px;
-	gap: 45px;
-	list-style-type: none;
+
+.navbar,
+.navbar-expand-lg {
+	max-width: 1140px;
 }
 
-a {
-	text-decoration: none;
+.navbar-nav {
+	gap: 45px;
 }
