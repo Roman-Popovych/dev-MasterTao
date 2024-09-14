@@ -1,31 +1,23 @@
-header{
-	height: 114px;
-	padding: 25px 0 39px;
-	a {
-		color: #fff;
-		text-decoration: none;
+.custom-navbar {
+	padding: 21px 0 39px;
+	.navbar-brand {
+		margin: 0;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.navbar-nav {
+		margin-top: 2px;
+		.nav-item {
+			.nav-link {
+				padding: 12px 23px;
+				color: #fff;
+				text-decoration: none;
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
 	}
 }
 
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.logo {
-	height: 48.35px;
-	width: 172px;
-	margin-right: 97px;
-	cursor: pointer;
-}
-
-
-.navbar,
-.navbar-expand-lg {
-	max-width: 1140px;
-}
-
-.navbar-nav {
-	gap: 45px;
-}

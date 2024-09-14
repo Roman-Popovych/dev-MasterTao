@@ -1,0 +1,85 @@
+@media screen and (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .custom-navbar {
+        padding: 13px 0 13px;
+        .navbar-brand {
+            max-width: 126px;
+        }
+        .navbar-nav {
+            padding: 35px 0 21px;
+            .nav-item {
+                .nav-link {
+                    padding: 0;
+                    font-size: 24px;
+                    line-height: 222%;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+        .btn {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 146%;
+            width: 100%;
+            max-width: 295px;
+            padding: 22px 0;
+            margin-bottom: 59px;
+        }
+        .navbar-toggler {
+            padding: 0;
+            border: none;
+            border-radius: none;
+            &:focus {
+                box-shadow: none;
+                border-radius: none;
+            }
+            .navbar-toggler-icon {
+                background-image: none;
+                position: relative;
+                height: 2px;
+                width: 27.5px;
+                background: #fff;
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    top: 11px; 
+                    left: 0;
+                    transition: .3s;
+                }
+                &::after {
+                    top: -11px;
+                }
+            }
+        }
+        .navbar-collapse {
+            text-align: center;
+            background: $bg-section;
+            margin: 10px -20px 0;
+            box-shadow: 14px 22px 40px #1e234247;
+        }
+        [aria-expanded="true"] {
+            .navbar-toggler-icon {
+                background: transparent;
+                &::before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+
