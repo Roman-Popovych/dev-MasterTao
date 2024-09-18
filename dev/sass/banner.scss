@@ -1,6 +1,39 @@
 .banner {
     .swiper {
         border-radius: 20px;
+
+        .swiper-button-next, 
+        .swiper-button-prev {
+            color: $color;
+            &:hover {
+                &::after {
+                    color: $secondary-color;
+                }
+            }
+        }
+        .swiper-button-prev {
+            left: 160px;
+        }
+        .swiper-button-next {
+            right: 160px;
+        }
+
+        .swiper-pagination {
+            bottom: var(--swiper-pagination-bottom, 36px);
+            margin-left: 10px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            opacity: 90;
+            border: 2px solid $color;
+            background: transparent;
+            margin-right: 22px;
+            &.swiper-pagination-bullet-active {
+                background: $color;
+            }
+        }
     }
     .container {
         height: 700px;
@@ -13,6 +46,7 @@
         font-size: 56px;
         max-width: 463px;
         margin-bottom: 8px;
+        text-transform: uppercase;
     }
     .banner-description {
         font-weight: 300;
