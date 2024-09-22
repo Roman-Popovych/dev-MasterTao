@@ -1,9 +1,19 @@
 .banner {
     .swiper {
-        border-radius: 20px;
+        .swiper-slide {
+            background-position: center;
+        }
 
         .swiper-button-next, 
         .swiper-button-prev {
+            margin-top: 0;
+            height: 0;
+            max-width: 1600px;
+            padding: 0 50px;
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            justify-content: flex-start;
             color: $color;
             &:hover {
                 &::after {
@@ -11,13 +21,9 @@
                 }
             }
         }
-        .swiper-button-prev {
-            left: 160px;
-        }
         .swiper-button-next {
-            right: 160px;
+            justify-content: flex-end;
         }
-
         .swiper-pagination {
             bottom: var(--swiper-pagination-bottom, 36px);
             margin-left: 10px;
@@ -36,7 +42,7 @@
         }
     }
     .container {
-        height: 700px;
+        min-height: 700px;
         padding-top: 163px;
         padding-bottom: 228px;
     }
@@ -45,13 +51,13 @@
         font-weight: 700;
         font-size: 56px;
         max-width: 463px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         text-transform: uppercase;
     }
     .banner-description {
         font-weight: 300;
         font-size: 20px;
-        line-height: 136%;
+        line-height: 135%;
         margin-bottom: 37px;
         max-width: 340px;
         min-height: 54px;

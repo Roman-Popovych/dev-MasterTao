@@ -80,6 +80,28 @@
 
     }
 
+    .banner {
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 649px;
+            text-align: center;
+            align-items: center;
+            padding-top: 188px;
+            padding-bottom: 212px;
+        }
+        .banner-title {
+            line-height: 126%;
+            font-size: 32px;
+            max-width: 290px;
+        }
+        .banner-description {
+            line-height: 136%;
+            font-size: 16px;
+            max-width: 275px;
+            margin-bottom: 6px;
+        }
+    }
 }
 
 
