@@ -1,0 +1,65 @@
+.calculation {
+    padding-top: 94px;
+    padding-bottom: 117px;
+    .calculation-form {
+        width: 626px;
+        border-radius: 20px;
+        box-shadow: 5px 15px 40px 0 #0b186152;
+        background-color: $bg-section;
+        padding: 53px 50px 58px;
+        
+        .calculation-row {
+            display: flex;
+            gap: 30px;
+        }
+
+        .calculation-col {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .label-classic {
+            margin-bottom: 6px;
+            font-weight: 600;
+            line-height: 126%;
+            font-size: 15px;
+            color: $color;
+        }
+
+        .input-classic {
+            padding: 16px 24px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: $color;
+            margin-bottom: 20px;
+            border: none;
+            
+            &::placeholder {
+                color: $placeholder-color;
+            }
+
+            &:hover {
+                box-shadow: 0 0 1px 1px $primary-color;
+            }
+            &:active,
+            &:focus {
+                box-shadow: 0 0 1px 1px $secondary-color;
+            }
+        }
+
+        .control-box_checkboxes {
+            margin-top: 19px;
+        }
+
+        .control-box_file {
+            margin-top: 14px;
+            margin-bottom: 26px;
+        }
+
+        .checkbox_control-box {
+            position: relative;
+            margin-bottom: 19px;
+        }
+    }
+}
