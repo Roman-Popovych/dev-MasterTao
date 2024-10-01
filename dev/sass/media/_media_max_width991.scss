@@ -1,4 +1,4 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.9px) {
     .container {
         padding: 0 20px;
     }
@@ -100,6 +100,28 @@
             font-size: 16px;
             max-width: 275px;
             margin-bottom: 6px;
+        }
+    }
+
+    .calculation {
+        .calculation-img {
+            display: none;
+        }
+
+        .calculation-form {
+            margin: 0 auto;
+        }
+    }
+
+    .template-title {
+        h2 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        &:before {
+            bottom: 28px;
         }
     }
 }

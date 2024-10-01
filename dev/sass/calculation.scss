@@ -1,17 +1,28 @@
 .calculation {
-    padding-top: 94px;
+    padding-top: 99px;
     padding-bottom: 117px;
+
+    .container {
+        position: relative;
+    }
+
+    .template-title h2 {
+        margin-bottom: 9px;
+    }
+
+    .calculation-row {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
     .calculation-form {
-        width: 626px;
+        max-width: 626px;
         border-radius: 20px;
         box-shadow: 5px 15px 40px 0 #0b186152;
         background-color: $bg-section;
-        padding: 53px 50px 58px;
+        padding: 47px 50px 58px;
         
-        .calculation-row {
-            display: flex;
-            gap: 30px;
-        }
 
         .calculation-col {
             display: flex;
@@ -28,11 +39,11 @@
         }
 
         .input-classic {
-            padding: 16px 24px;
+            padding: 16px 18px;
             width: 100%;
             border-radius: 10px;
             background-color: $color;
-            margin-bottom: 20px;
+            margin-bottom: 17px;
             border: none;
             
             &::placeholder {
@@ -49,17 +60,35 @@
         }
 
         .control-box_checkboxes {
-            margin-top: 19px;
+            margin-top: 22px;
         }
 
         .control-box_file {
-            margin-top: 14px;
+            position: relative;
+            margin-top: 48px;
             margin-bottom: 26px;
+
+            .file-name {
+                position: absolute;
+                left: 0;
+                top: -33px;
+                font-size: 15px;
+            }
         }
 
         .checkbox_control-box {
             position: relative;
-            margin-bottom: 19px;
+            margin-bottom: 14px;
+            font-weight: 600;
         }
+    }
+    
+    .calculation-img {
+        position: absolute;
+        bottom: -115px;
+        left: 610px;
+        width: 29.167vw;
+        max-width: 560px;
+        min-width: 360px;
     }
 }

@@ -1,3 +1,31 @@
 @media screen and (max-width: 767px) {
+    .calculation {
+        .calculation-form {
+            margin: 0 auto;
+            padding: 49px 30px 34px;
+            width: 100%;
+            margin-top: 23px;
+            .control-box_checkboxes {
+                margin-top: 10px;
+            }
+            
+            .control-box_file {
+                width: 100%;
+                margin-top: 28px;
+                padding: 8px 0 0;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    
+        .calculation-row {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
 
+    [type=file] + label {
+        padding: 12px 12px 8px;
+    }
 }

@@ -3,59 +3,63 @@
         <div class="template-title case-3">
             <h2>Получить рассчет стоимости доставки вашего груза</h2>
         </div>
-        <form class="calculation-form">
-            <div class="calculation-row">
-                <div class="calculation-col">
-                    <div class="control-box">
-                        <label for="calc_product-category" class="label-classic">Категория товара:</label>
-                        <input id="calc_product-category" class="input-classic" type="text" placeholder="Категория товара">
-                    </div>
-                    <div class="control-box">
-                        <label for="calc_weight" class="label-classic">Вес груза (кг):</label>
-                        <input id="calc_weight" class="input-classic" type="text" placeholder="Введите вес">
-                    </div>
-                </div>
-                <div class="calculation-col">
-                    <div class="control-box">
-                        <label for="calc_price" class="label-classic">Стоимость груза:</label>
-                        <input id="calc_price" class="input-classic" type="text" placeholder="Введите стоимость">
-                    </div>
-                    <div class="control-box">
-                        <label for="calc_load-volume" class="label-classic">Объем груза (м3):</label>
-                        <input id="calc_load-volume" class="input-classic" type="text" placeholder="Введите объем">
-                    </div>
-                </div>
-            </div>
-            <div class="calculation-row">
-                <div class="calculation-col">
-                    <div class="control-box control-box_checkboxes">
-                        <div class="checkbox_control-box">
-                            <input id="calc_insurance" type="checkbox">
-                            <label for="calc_insurance">Страховка</label>
+        <div class="calculation-row">
+            <form class="calculation-form">
+                <div class="calculation-row">
+                    <div class="calculation-col">
+                        <div class="control-box">
+                            <label for="calc_product-category" class="label-classic">Категория товара:</label>
+                            <input id="calc_product-category" class="input-classic" type="text" placeholder="Категория товара">
                         </div>
+                        <div class="control-box">
+                            <label for="calc_weight" class="label-classic">Вес груза (кг):</label>
+                            <input id="calc_weight" class="input-classic" type="number" placeholder="Введите вес">
+                        </div>
+                    </div>
+                    <div class="calculation-col">
+                        <div class="control-box">
+                            <label for="calc_price" class="label-classic">Стоимость груза:</label>
+                            <input id="calc_price" class="input-classic" type="number" placeholder="Введите стоимость">
+                        </div>
+                        <div class="control-box">
+                            <label for="calc_load-volume" class="label-classic">Объем груза (м3):</label>
+                            <input id="calc_load-volume" class="input-classic" type="number" placeholder="Введите объем">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculation-row">
+                    <div class="calculation-col">
+                        <div class="control-box control-box_checkboxes">
+                            <div class="checkbox_control-box">
+                                <input id="calc_insurance" type="checkbox">
+                                <label for="calc_insurance">Страховка</label>
+                            </div>
 
-                        <div class="checkbox_control-box">
-                            <input id="calc_custom-clearance" type="checkbox">
-                            <label for="calc_custom-clearance">Таможенное оформление</label>
+                            <div class="checkbox_control-box">
+                                <input id="calc_custom-clearance" type="checkbox">
+                                <label for="calc_custom-clearance">Таможенное оформление</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculation-col">
+                        <div class="control-box">
+                            <label for="calc_code" class="label-classic">Код ТН ВЭД:</label>
+                            <input id="calc_code" class="input-classic" type="number" placeholder="Введите код">
                         </div>
                     </div>
                 </div>
-                <div class="calculation-col">
-                    <div class="control-box">
-                        <label for="calc_code" class="label-classic">Код ТН ВЭД:</label>
-                        <input id="calc_code" class="input-classic" type="text" placeholder="Введите код">
+                <div class="calculation-row">
+                    <div class="calculation-col">
+                        <div class="control-box_file">
+                            <div class="file-name"></div>
+                            <input id="calc_file" class="custom-file" type="file">
+                            <label for="calc_file">Загрузить фото товара</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="calculation-row">
-                <div class="calculation-col">
-                    <div class="control-box_file">
-                        <input id="calc_file" type="file">
-                        <label for="calc_file">Загрузить фото товара</label>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn btn-primary btn-lg">Следующий шаг <img src="assets/img/arrow-left.svg" alt="arrow-left"></a>
-        </form>
+                <a href="#" class="btn btn-primary btn-lg">Следующий шаг <img src="assets/img/arrow-left.svg" alt="arrow-left"></a>
+            </form>
+            <img src="assets/img/calculation-img.png" class="calculation-img" alt="calculation-img">
+        </div>
     </div>
 </section>
