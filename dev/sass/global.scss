@@ -148,6 +148,10 @@ ul {
         font-weight: 700;
         line-height: 125%;
         margin-bottom: 6px;
+        
+        &::after {
+            background-color: $secondary-color;
+        }
     }
 
     h4 {
@@ -266,5 +270,14 @@ span.break {
     margin-right: 22px;
     &.swiper-pagination-bullet-active {
         background: $color;
+    }
+}
+
+.advantages {
+    .template-title {
+        &::before,
+        &::after {
+            background: $primary-color;
+        }
     }
 }
