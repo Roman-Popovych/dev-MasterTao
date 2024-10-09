@@ -37,4 +37,21 @@
             }
         }
     }
+
+    .advantages {
+        .container {
+            max-width: 1174px;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .advantage {
+            width: 25%;
+            max-width: 263px;
+            min-height: 201px;
+        }
+    }
 }

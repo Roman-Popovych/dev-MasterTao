@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#banner-slider', {
     // Optional parameters
     loop: true,
   
@@ -34,7 +34,28 @@ typeFile.forEach(item => {
 })
 
 
-
+const swiperAdvantages = new Swiper('#advantages-slider', {
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: true,
+    },
+    breakpoints: {
+        992: {
+            spaceBetween: 0,
+            loop: false,
+            slidersPerGroup: 8,
+            simulateTouch: false,
+            pagination: {
+                enabled: false,
+                el: '.swiper-pagination',
+            }
+        }
+    }
+});
 
 
 

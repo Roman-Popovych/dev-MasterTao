@@ -230,6 +230,8 @@ section {
 
 .bg-section {
     position: relative;
+    padding-left: 88px;
+    padding-right: 88px;
     
     &::before {
         content: "";
@@ -243,5 +245,26 @@ section {
         top: 0;
         z-index: -1;
         border-radius: 20px;
+    }
+}
+
+span.break {
+    display: block;
+}
+
+.swiper-pagination {
+    bottom: var(--swiper-pagination-bottom, 36px);
+    margin-left: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    opacity: 90;
+    border: 2px solid $color;
+    background: transparent;
+    margin-right: 22px;
+    &.swiper-pagination-bullet-active {
+        background: $color;
     }
 }

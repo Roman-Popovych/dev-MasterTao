@@ -1,4 +1,13 @@
-@media screen and (max-width: 991.9px) {
+@media screen and (max-width: 991px) {
+    section,
+    .calculation {
+        padding: $section-padding-mb;
+    }
+
+    .banner {
+        padding: 0px 0 25px;
+    }
+
     .container {
         padding: 0 20px;
     }
@@ -124,6 +133,27 @@
             bottom: 28px;
         }
     }
+    .bg-section {
+        padding-left: 0;
+        padding-right: 0;
+        
+        &::before {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    .advantages {
+        padding-bottom: 45px;
+        padding-top: 55px;
+        margin-top: 30px;
+        
+        .advantage {
+            padding-top: 14px;
+            margin-bottom: 48px;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+        }
+    }
 }
-
-
