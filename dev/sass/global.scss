@@ -273,11 +273,13 @@ span.break {
     }
 }
 
-.advantages {
-    .template-title {
-        &::before,
-        &::after {
-            background: $primary-color;
+main {
+    section:nth-child(odd) {
+        .template-title {
+            &::before,
+            &::after {
+                background: $primary-color;
+            }
         }
     }
 }
