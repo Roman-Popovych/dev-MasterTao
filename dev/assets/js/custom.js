@@ -65,7 +65,7 @@ const swiperSliderTemplate = new Swiper('.slider-template', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-       
+        enabled: true,
     },
     navigation: {
         enabled: false,
@@ -89,6 +89,9 @@ const swiperSliderTemplate = new Swiper('.slider-template', {
                 enabled: true,
                 nextEl: '.swiper-button-next-unique',
                 prevEl: '.swiper-button-prev-unique'
+            },
+            pagination: {
+                enabled: false,
             },
         },
 
