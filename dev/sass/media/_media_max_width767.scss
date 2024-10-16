@@ -42,4 +42,19 @@
     .swiper-navigation {
         display: none;
     }
+
+    .card {
+        width: 335px;
+
+        // .card-price {
+        //     margin-bottom: 24px;
+        // }
+
+        .btn-row {
+            .btn {
+                max-width: 138px;
+                padding: 13px 8px;
+            }
+        }
+    }
 }
