@@ -220,17 +220,20 @@ swiperTemplate.forEach((item, index) => {
                     nextEl: '.swiper-button-next-unique-' + index,
                     prevEl: '.swiper-button-prev-unique-' + index,
                 },
+                pagination: {
+                    enabled: false,
+                },
             }
         }
     });
 });
 
+document.body.querySelectorAll('section').forEach(function(node,i){
+    node.classList.add(i % 2?"1":"bg-section");
+})
 
-
-
-
-
-
+const firstSection = document.querySelector('.banner');
+firstSection.classList.remove("bg-section");
 
 
 
