@@ -110,6 +110,9 @@
             max-width: 275px;
             margin-bottom: 6px;
         }
+        .swiper .swiper-pagination {
+            margin-left: 0px;
+        }
     }
 
     .calculation {
@@ -154,6 +157,37 @@
         }
         .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
             margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+        }
+    }
+
+    .delivery {
+        .template-title {
+            padding-bottom: 34px;
+        }
+    }
+
+    .services {
+        padding: 48px 0px 48px;
+        .swiper-wrapper {
+            padding-top: 6px;
+        }
+    }
+
+    .about-company {
+        padding: 55px 0px 48px;
+        .template-title {
+            padding-bottom: 43px;
+        }
+        .col:first-child {
+            padding-top: 0;
+        }
+        .description {
+            padding-top: 0;
+            gap: 21px;
+        }
+        .img-fluid {
+            padding: 25px;
+            margin: 15px 0 0 10px;
         }
     }
 }

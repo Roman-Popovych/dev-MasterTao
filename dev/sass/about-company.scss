@@ -1,0 +1,25 @@
+.about-company {
+    padding: 76px 0 100px;
+    .col:first-child {
+        padding-top: 70px;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 170%;
+        max-width: 555px;
+        padding-top: 11px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .img-fluid {
+        max-width: 550px;
+        height: auto;
+        margin: 14px 0px 0 7px;
+    }
+}

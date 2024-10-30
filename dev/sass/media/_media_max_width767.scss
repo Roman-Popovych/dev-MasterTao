@@ -60,6 +60,13 @@
 
     .delivery {
         padding: 54px 0 59px;
+        .card {
+            .img-box {
+                img {
+                    margin-top: -7px;
+                }
+            }
+        }
     }
 
     .services .card .img-box {

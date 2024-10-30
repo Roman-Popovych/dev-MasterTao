@@ -17,4 +17,20 @@
             }
         }
     }
+
+    .about-company {
+        .row {
+            flex-direction: column;
+            .col {
+                margin: auto;
+                width: auto;
+            }
+            .description {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: justify;
+            }
+        }
+    }
 }
