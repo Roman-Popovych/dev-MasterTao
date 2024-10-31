@@ -30,35 +30,6 @@
             width: 100%;
         }
 
-        .label-classic {
-            margin-bottom: 6px;
-            font-weight: 600;
-            line-height: 126%;
-            font-size: 15px;
-            color: $color;
-        }
-
-        .input-classic {
-            padding: 16px 18px;
-            width: 100%;
-            border-radius: 10px;
-            background-color: $color;
-            margin-bottom: 17px;
-            border: none;
-            
-            &::placeholder {
-                color: $placeholder-color;
-            }
-
-            &:hover {
-                box-shadow: 0 0 1px 1px $primary-color;
-            }
-            &:active,
-            &:focus {
-                box-shadow: 0 0 1px 1px $secondary-color;
-            }
-        }
-
         .control-box_checkboxes {
             margin-top: 22px;
         }
@@ -90,5 +61,34 @@
         width: 29.167vw;
         max-width: 560px;
         min-width: 360px;
+    }
+}
+
+.label-classic {
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 126%;
+    font-size: 15px;
+    color: $color;
+}
+
+.input-classic {
+    padding: 16px 18px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $color;
+    margin-bottom: 17px;
+    border: none;
+    
+    &::placeholder {
+        color: $placeholder-color;
+    }
+
+    &:hover {
+        box-shadow: 0 0 1px 1px $primary-color;
+    }
+    &:active,
+    &:focus {
+        box-shadow: 0 0 1px 1px $secondary-color;
     }
 }
