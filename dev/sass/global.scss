@@ -13,6 +13,7 @@ body {
     font-family: $font-primary;
     font-weight: 400;
     font-size: $fs;
+    overflow-x: hidden;
 }
 
 .container {
@@ -229,6 +230,7 @@ input[type='number'] {
 section {
     padding: $section-padding;
     position: relative;
+    // max-width: 99vw;
 }
 
 .bg-section {
@@ -260,6 +262,10 @@ span.break {
     margin-left: 10px;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: calc(100% - 10px);
+}
+
 .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
@@ -283,7 +289,7 @@ main {
     }
 }
 
-.flex-row {
+.f-row {
     display: flex;
     flex-direction: row;
 }

@@ -1,5 +1,9 @@
 .about-company {
     padding: 76px 0 100px;
+
+    .row {
+        padding-bottom: 53px;
+    }
     .col:first-child {
         padding-top: 70px;
     }
@@ -38,7 +42,7 @@
         }
         .accordion-item {
             width: 100%;
-            margin-bottom: 16px;
+            margin-bottom: 19px;
             border: none;
             border-radius: 10px;
             background-color: transparent;
@@ -56,18 +60,34 @@
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 125%;
+
+                padding: 17px 16px 15px 32px;
                 &:after {
                     background: none;
                     mask-image: url(assets/img/faq-arrow.svg);
                     background-color: #fff;
                     width: 27px;
                     height: 27px;
+                    margin-right: 3px;
+                    opacity: 0;
+                }
+                &:before {
+                    content: "";
+                    background: none;
+                    mask-image: url(assets/img/faq-arrow.svg);
+                    background-color: #fff;
+                    width: 27px;
+                    height: 27px;
+                    position: absolute;
+                    top: 16px;
+                    right: 19px;
+                    transition: .3s;
                 }
                 &:not(.collapsed) {
                     color: #282B38;
                     border: none;
                     border-radius: 10px 10px 0 0;
-                    &:after {
+                    &:before {
                         transform: rotate(-90deg);
                         background-color: $primary-color;
                     }
@@ -81,12 +101,12 @@
         .accordion-collapse {
             .accordion-body {
                 border-radius: 0 0 10px 10px;
-                font-family: var(--font-family);
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 145%;
                 color: #282b38;
-                padding: 0 99px 21px 34px;
+                padding: 0 99px 20px 34px;
+                margin-top: -3px;
             }
             &.show {
                 .accordion-body {
@@ -100,10 +120,28 @@
         .faq-form {
             width: 100%;
             max-width: 390px;
-            padding: 38px 45px;
+            height: 553px;
+            padding: 38px 40px;
             background: $bg-section;
             border-radius: 20px;
             box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
+            
+            fieldset {
+                margin-bottom: 6px;
+            }
+
+            .input-classic {
+                margin-bottom: 14px;
+                &.custom-ask {
+                    min-height: 70px;
+                    max-height: 70px;
+                    height: 100%;
+                    resize: none;
+                }
+            }
+            .btn {
+                width: 100%;
+            }
         }
         .faq-form_title {
             font-weight: 700;
@@ -116,9 +154,11 @@
             font-size: 17px;
             line-height: 126%;
             color: #fff;
+            margin-bottom: 21px;
         }
-        .flex-row {
+        .f-row {
             gap: 34px;
+            padding-top: 16px;
         }
     }
 }

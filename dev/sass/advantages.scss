@@ -12,6 +12,9 @@
     .swiper-pagination {
         margin-left: 0;        
     }
+    &:before {
+        width: calc(100% - 88px);
+    }
 }
 
 .advantage {

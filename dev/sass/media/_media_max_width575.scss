@@ -1,3 +1,38 @@
 @media screen and (max-width: 575px) {
-
+    .about-company {
+        .row {
+            padding-bottom: 24px;
+        }
+        .faq {
+            .accordion-item {
+                margin-bottom: 16px;
+                .accordion-button {
+                    font-size: 16px;
+                    padding: 15px 47px 13px 21px;
+                    line-height: 125%;
+                    height: 64px;
+                    &:before {
+                        top: 17px;
+                    }
+                }
+            }
+            .accordion-collapse {
+                .accordion-body {
+                    font-size: 14px;
+                    padding: 0 22px 12px 22px;
+                }
+            }
+            .template-title {
+                padding-bottom: 44px;
+            }
+            .f-row {
+                padding-top: 0;
+                gap: 12px;
+            }
+            .faq-form {
+                padding: 38px 20px;
+                text-align: center;
+            }
+        }
+    }
 }

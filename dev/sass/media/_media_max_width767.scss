@@ -6,6 +6,15 @@
             max-width: 552px;
         }
     }
+
+    .faq {
+        .f-row {
+            flex-direction: column;
+        }
+        .faq-form {
+            margin: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 767.99px) {
