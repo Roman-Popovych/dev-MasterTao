@@ -15,6 +15,15 @@
             margin: auto;
         }
     }
+    footer {
+        .f-row {
+            .secondary-information {
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767.99px) {
@@ -68,13 +77,34 @@
     }
 
     .delivery {
-        padding: 54px 0 59px;
+        padding: 54px 0 51px;
         .card {
             .img-box {
                 img {
                     margin-top: -7px;
                 }
             }
+            .card-title {
+                margin-top: 13px;
+            }
+            .card-option {
+                margin-top: 1px;
+                gap: 46px;
+                img {
+                    margin-right: 10px;
+                }
+            }
+            .card-price {
+                margin-top: 3px;
+                margin-left: 5px;
+            }
+            .btn-row {
+                margin-top: 3px;
+            }
+        }
+        .slider-template .swiper-pagination {
+            bottom: 8px;
+            margin-left: 5px;
         }
     }
 
@@ -87,5 +117,27 @@
         /* object-fit: cover; */
         /* object-fit: contain; */
         margin-bottom: 0;
+    }
+    .services {
+        .card {
+            .btn-row {
+                .btn {
+                    margin-left: 10px;
+                    margin-bottom: 2px;
+                    width: 153px;
+                    max-width: 153px;
+                }
+            }
+            .card-description {
+                margin-top: 0px;
+                margin-bottom: 3px;
+                font-size: 14px;
+                padding-right: 20px;
+            }
+        }
+    }
+    .slider-template .swiper-pagination {
+        bottom: 3px;
+        margin-left: 5px;
     }
 }

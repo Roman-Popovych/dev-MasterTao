@@ -38,6 +38,7 @@
     
     .cooperation {
         padding-top: 55px;
+        padding-bottom: 39px;
         ul {
             .list-item {
                 font-weight: 400;
@@ -80,5 +81,40 @@
                 width: calc(100% - 3px);
             }
         }
+    }
+
+    footer {
+        .f-row {
+            .secondary-information {
+                &:nth-child(1n) {
+                    display: none;
+                }
+            }
+            .f-col {
+                &:nth-child(1n) {
+                    margin-right: 0;
+                    text-align: center;
+                    li {
+                        &:nth-child(1) {
+                            margin-top: -2px;
+                        }
+                        &:nth-child(2) {
+                            margin-top: 2px;
+                        }
+                    }
+                }
+                .social-networks {
+                    &:nth-child(1) {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .banner .swiper .swiper-pagination {
+        margin-left: 5px;
+    }
+    .advantages .swiper-pagination {
+        margin-left: 5px;
     }
 }

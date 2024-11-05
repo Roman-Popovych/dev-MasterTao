@@ -46,24 +46,24 @@ a {
 //     }
 // }
 
-ul {
-    li {
-        position: relative;
-        &:not([class]) {
-            &::before {
-                content: "";
-                position: absolute;
-                width: 12px;
-                height: 12px;
-                background-color: $primary-color;
-                border-radius: 3px;
-                left: -18px;
-                top: 7px;
-                transform: rotate(45deg);
-            }
-        }   
-    }
-}
+// ul {
+//     li {
+//         position: relative;
+//         &:not([class]) {
+//             &::before {
+//                 content: "";
+//                 position: absolute;
+//                 width: 12px;
+//                 height: 12px;
+//                 background-color: $primary-color;
+//                 border-radius: 3px;
+//                 left: -18px;
+//                 top: 7px;
+//                 transform: rotate(45deg);
+//             }
+//         }   
+//     }
+// }
 
 .dropdown-menu {
     > li {

@@ -54,4 +54,15 @@
             }
         }
     }
+
+    footer {
+        .f-row {
+            justify-content: center;
+            .secondary-information {
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
