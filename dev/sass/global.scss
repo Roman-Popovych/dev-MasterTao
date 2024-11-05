@@ -40,11 +40,11 @@ a {
     }
 }
 
-li {
-    &::marker {
-        color: $primary-color;
-    }
-}
+// li {
+//     &::marker {
+//         color: $primary-color;
+//     }
+// }
 
 ul {
     li {
@@ -293,3 +293,8 @@ main {
     display: flex;
     flex-direction: row;
 }
+// .f-col {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+// }

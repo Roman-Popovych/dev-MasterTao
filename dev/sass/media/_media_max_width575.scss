@@ -35,4 +35,50 @@
             }
         }
     }
+    
+    .cooperation {
+        padding-top: 55px;
+        ul {
+            .list-item {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: justify;
+                margin-bottom: 21px;
+            }
+        }
+        .template-title {
+            margin-left: 4px;
+            margin-bottom: 14px;
+        }
+        .img-container {
+            width: 335px;
+            height: 220px;
+            position: relative;
+            img {
+                position: absolute;
+                inset: 0;
+                top: -25px;
+                max-width: none;
+                width: 375px;
+                height: auto;
+                left: -20px;
+            }
+        }
+        .col-list {
+            margin-top: -22px;
+            padding: 0 5px 0 8px;
+            .list-2 {
+                padding-top: 0px;
+                margin-top: -6px;
+                .last-item {
+                    margin-bottom: 29px;
+                }
+            }
+            .btn {
+                margin-left: 0px;
+                width: calc(100% - 3px);
+            }
+        }
+    }
 }

@@ -1,3 +1,24 @@
+@media screen and (max-width: 1323.99px) {
+    .cooperation {
+        .f-row {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .f-col {
+                ul.list-2 {
+                    margin-left: 0
+                };
+            }
+        }
+
+        .f-row > .col-list + .col-img {
+            &.col-img {
+                order: -1;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1251.99px) {
     .slider-template {
         width: 750px;
