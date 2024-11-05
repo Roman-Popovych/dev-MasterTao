@@ -15,7 +15,7 @@
         font-size: 18px;
         line-height: 170%;
         max-width: 555px;
-        padding-top: 11px;
+        padding-top: 15px;
         p {
             margin-bottom: 0;
         }
@@ -39,10 +39,11 @@
         // }
         .accordion {
             width: 100%;
+            margin-top: 2px;
         }
         .accordion-item {
             width: 100%;
-            margin-bottom: 19px;
+            margin-bottom: 15px;
             border: none;
             border-radius: 10px;
             background-color: transparent;
@@ -61,7 +62,7 @@
                 font-size: 18px;
                 line-height: 125%;
 
-                padding: 17px 16px 15px 32px;
+                padding: 19px 16px 17px 32px;
                 &:after {
                     background: none;
                     mask-image: url(assets/img/faq-arrow.svg);
@@ -105,7 +106,7 @@
                 font-size: 17px;
                 line-height: 145%;
                 color: #282b38;
-                padding: 0 99px 20px 34px;
+                padding: 0 99px 19px 34px;
                 margin-top: -3px;
             }
             &.show {
@@ -154,7 +155,7 @@
             font-size: 17px;
             line-height: 126%;
             color: #fff;
-            margin-bottom: 21px;
+            margin-bottom: 24px;
         }
         .f-row {
             gap: 34px;
