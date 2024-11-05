@@ -15,6 +15,9 @@
     &:before {
         width: calc(100% - 88px);
     }
+    .container {
+        max-width: none;
+    }
 }
 
 .advantage {
@@ -22,6 +25,7 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 25px;
+    margin-right: 0;
     &-img {
         display: inline-block;
         border: 1px solid #6C7188;
@@ -42,5 +46,17 @@
         font-size: 18px;
         line-height: 124%;
         margin: 0;
+    }
+    &:nth-child(4n-3) {
+        margin-left: 9px;
+    }
+    &:nth-child(4n-2) {
+        margin-left: 30px;
+    }
+    &:nth-child(4n-1) {
+        margin-left: 29px;
+    }
+    &:nth-child(4n) {
+        margin-left: 31px;
     }
 }
